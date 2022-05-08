@@ -1,20 +1,13 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Navbar from './navbar'
-import GetAccount from './web3'
+import Layout from '../components/layout'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-
-  <div>
-    <Navbar/>
-    <div/>
-    <Component {...pageProps} />
-  </div>
-
-
-)
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
-
 
 export default MyApp
