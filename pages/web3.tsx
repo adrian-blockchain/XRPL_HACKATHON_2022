@@ -2,7 +2,7 @@ import {ethers} from "ethers";
 import {useState} from "react";
 
 // @ts-ignore
-import {nftMarketplace} from "../../Galerie-template-main 2/artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json";
+//import {nftMarketplace} from "../../Galerie-template-main 2/artifacts/contracts/NFTMarketplace.sol/NFTMarketplace.json";
 
 declare let window: any;
 
