@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./NFTCollection.sol";
+import "./NFTWasteToken.sol";
 
 contract NFTMarketplace {
     uint public offerCount;
@@ -51,6 +51,7 @@ contract NFTMarketplace {
         require(msg.value == _offer.price, 'The ETH amount should match with the NFT Price');
         nftCollection.transferFrom(address(this), msg.sender, _offer.id);
         _offer.fulfilled = true;
+        //Swap payable into crypto
         userFunds[_offer.user] += msg.value;
         emit OfferFilled(_offerId, _offer.id, msg.sender);
     }
