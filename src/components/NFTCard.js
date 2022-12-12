@@ -44,8 +44,8 @@ const NFTCard = ({ username, nftName, price, nftSrc, likeCount, gradient, onClic
         </ColorExtractor></>}
         <div className="wrapper">
           <div className="info-container">
-            <p className="owner"> LEJOURN.DARK.NFT</p>
-            <p className="name">Alien Cry</p>
+            <p className="owner"> Trashtag</p>
+            <p className="name">Challenge</p>
           </div>
 
           <div className="price-container">
@@ -60,20 +60,7 @@ const NFTCard = ({ username, nftName, price, nftSrc, likeCount, gradient, onClic
           {/* <button className="buy-now">Buy Now</button> */}
           <Button color={Colors.buttons.primary} textContent="Buy Now" onClick={onClick} />
           <div className="like-container">
-            <button className="like" onClick={like}>
-              {!isLike ? (
-                <AiOutlineHeart size="30" color="white" />
-              ) : (
-                <AiFillHeart size="30" style={{
-                  stroke: `-webkit-linear-gradient(
-                    to bottom,
-                    #38ef7d,
-                    #11998e
-                  );`
-                }} color='#00f5c966' />
-              )}
-            </button>
-            <p className="like-count">123</p>
+            <p className="like-count">waste 1</p>
           </div>
         </div>
       </>}>

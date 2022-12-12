@@ -21,8 +21,8 @@ const NFTDetail = () => {
   const [colors, setColors] = useState([]);
 
   const [isLike, setIsLike] = useState(false);
-  
-  
+
+
 
   const like = () => setIsLike(!isLike);
 
@@ -40,7 +40,7 @@ const NFTDetail = () => {
 
   const isARSupport = useARStatus(state.item.src);
 
-  
+
 
   //!! aciklama karakter sayisi sinirlanmali.
   //!! scroll sorununa cozum bulunmali.
@@ -56,15 +56,15 @@ const NFTDetail = () => {
           child={
             //Detail Content
             <div id="detail-content">
-             {isARSupport ? <model-viewer ar-scale="auto" ar ar-modes="webxr scene-viewer quick-look" id="arDetail" loading="eager" camera-controls auto-rotate src={state.item.src} > </model-viewer> 
+             {isARSupport ? <model-viewer ar-scale="auto" ar ar-modes="webxr scene-viewer quick-look" id="arDetail" loading="eager" camera-controls auto-rotate src={state.item.src} > </model-viewer>
              : <> <ColorExtractor getColors={getColors}>
                 <img id="detail-image" src={state.item.src} />
               </ColorExtractor></>}
 
               <div id="detail-info" style={{}}>
                 <div id='detail-info-container'>
-                  <p id="collection"> {state.item.name} </p>
-                  <p id="name"> {state.item.name} </p>
+                  <p id="collection"> Challenge</p>
+                  <p id="name"> Challenge </p>
                   <p id="description" > {state.item.description} </p>
 
                 </div>
@@ -105,7 +105,7 @@ const NFTDetail = () => {
             </div>
           }
         />
-        
+
       </div>
 
     </div>

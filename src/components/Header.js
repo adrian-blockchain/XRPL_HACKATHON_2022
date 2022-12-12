@@ -14,7 +14,7 @@ const Header = () => {
 
     return (
         <div id="header">
-        <Link to='/' id='logo'>NFT Room</Link>
+        <Link to='/' id='logo'>Trashtag Label</Link>
 
         <div id="link-containers">
           <a>Start Hunting</a>
